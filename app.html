@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>学英语APP,作者:Innocent</title>
+    <script src="./jquery.js"></script>
+    <script src="./md5.js"></script>
+    <style>
+      body{
+        overflow-x: hidden;
+      }
+      .list {
+        margin-left: 300px;
+        position: relative;
+      }
+      table td {
+        max-width: 500px;
+        vertical-align: text-top;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      table td:hover {
+        white-space: normal;
+        overflow: auto;
+      }
+      table td:active{
+        background:palevioletred;
+      }
+      #control{
+        position: fixed;
+        width: 300px;
+        height: 100%;
+        background: #eee;
+        bottom: 0;
+        right: 0;
+        opacity: 0.9;
+        overflow: auto;
+      }
+      .tablecolor{
+        background: yellowgreen;
+      }
+      #choose{
+        background: paleturquoise;
+        height: 400px;
+        width: 900px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>背单词APP v1.0功能版   
+
+
+      <button id="wordbasicButton">基础3500精简版</button>
+      <button id="wuteacherButton">无老师7天</button>
+      <button id="aideIELTSButton">750托福/雅思</button>
+      <button id="TOEFLsubjectButton">托福学科词汇</button>
+      <button id="GREButton">GRE要你命3K词汇</button>
+    </div>
+
+
+
+    <table style="border: 0" id="word"></table>
+
+    <div id="control">
+      <button id="showCn">专注模式结束</button>
+      <button id="hideCn">专注模式开始</button>
+      <button id="cleanAll">清空错题</button>
+      <button id="cleanAll">复制全部错题</button>
+      <table id="wrongWord">
+        
+      </table>
+    </div>
+    <audio id="play" autostart="false" src=""></audio>
+
+
+
+    <script src="./list/list.js"></script>
+    <script src="./list/list2.js"></script>
+    <script src="./list/list3.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
